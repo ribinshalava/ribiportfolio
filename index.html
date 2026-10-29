@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ribinsha L | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: #f5f5f5;
+    line-height: 1.7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #10172a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background:
+      radial-gradient(circle at 80% 20%, #30215c 0, transparent 35%);
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero p {
+    color: #c3c8d7;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.tag {
+    color: #c4b5fd;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #8b5cf6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #7c3aed;
+}
+
+.outline {
+    background: transparent;
+    border: 1px solid #a78bfa;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+h2 span {
+    color: #a78bfa;
+}
+
+.about-text {
+    color: #c3c8d7;
+    max-width: 750px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #141c31;
+    border: 1px solid #28324b;
+    padding: 25px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #a78bfa;
+}
+
+.card h3 {
+    color: #c4b5fd;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #c3c8d7;
+    font-size: 14px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    padding: 10px 18px;
+    background: #191f39;
+    border: 1px solid #51417a;
+    border-radius: 30px;
+    color: #ddd6fe;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.project-links a {
+    color: #c4b5fd;
+    text-decoration: none;
+}
+
+.contact-box {
+    background: linear-gradient(135deg, #20183c, #141c31);
+    padding: 35px;
+    border-radius: 16px;
+}
+
+.contact-box a {
+    color: #c4b5fd;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #9ca3af;
+    background: #10172a;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Ribinsha.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <p class="tag">Welcome to my portfolio</p>
+
+    <h1>Hi, I'm <span>Ribinsha L.</span></h1>
+
+    <h2 style="font-size:26px;">
+        BCA Student & Aspiring Data Analyst
+    </h2>
+
+    <p>
+        I am passionate about technology, data analysis,
+        and problem-solving. I enjoy learning new skills
+        and building projects that turn ideas into reality.
+    </p>
+
+    <div>
+        <a href="#projects" class="btn">Explore My Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About <span>Me</span></h2>
+
+    <p class="about-text">
+        I am a Bachelor of Computer Applications (BCA) student
+        at GEMS Arts and Science College, Ramapuram.
+        I am interested in data analytics, artificial intelligence,
+        and software development.
+
+        My goal is to strengthen my technical skills, gain practical
+        experience, and build a successful career in the technology
+        industry. I believe in continuous learning and improving
+        myself through projects and new challenges.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My <span>Skills</span></h2>
+
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>C Programming</span>
+        <span>Python - Learning</span>
+        <span>Excel - Learning</span>
+        <span>Data Analysis - Learning</span>
+        <span>Problem Solving</span>
+        <span>Communication</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My <span>Projects</span></h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                A responsive personal website showcasing my
+                background, skills, education, and projects.
+            </p>
+            <p><strong>Technologies:</strong> HTML, CSS</p>
+            <div class="project-links">
+                <a href="#home">Live Preview</a>
+                <a href="https://github.com/" target="_blank"
+                   rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>House Price Prediction</h3>
+            <p>
+                An academic project concept that uses regression
+                techniques to estimate house prices from selected
+                property features.
+            </p>
+            <p><strong>Technologies:</strong> Python, Machine Learning</p>
+            <div class="project-links">
+                <a href="#contact">Project Details</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Student Performance Prediction</h3>
+            <p>
+                A supervised learning project concept that explores
+                student data to predict pass or fail outcomes.
+            </p>
+            <p><strong>Technologies:</strong> Python, Data Analysis</p>
+            <div class="project-links">
+                <a href="#contact">Project Details</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="education">
+    <h2>My <span>Education</span></h2>
+
+    <div class="card">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p>GEMS Arts and Science College, Ramapuram</p>
+        <p>Currently pursuing undergraduate studies.</p>
+        <p>Focus: Computer Applications, Data Science and Technology.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact <span>Me</span></h2>
+
+    <div class="contact-box">
+        <p>
+            I am open to learning opportunities, collaborations,
+            and academic projects.
+        </p>
+
+        <p style="margin-top:15px;">
+            Email:
+            <a href="mailto:YOUR_EMAIL@example.com">
+                YOUR_EMAIL@example.com
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/" target="_blank"
+               rel="noopener noreferrer">Visit my GitHub ↗</a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/" target="_blank"
+               rel="noopener noreferrer">Visit LinkedIn ↗</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Ribinsha L | Personal Portfolio</p>
+    <p>Designed with passion and a love for technology.</p>
+</footer>
+
+</body>
+</html>
